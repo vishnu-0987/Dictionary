@@ -4,17 +4,25 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="web.css">
-
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <script src="https://kit.fontawesome.com/2cd236b43a.js" crossorigin="anonymous"></script>
         <title>My Dictionary Website</title>
     </head>
     <body>
         <div class="bg-container">
-            <h1 class="main-heading">DICTIONARY</h1>
-            <div class="search-form">
-                <input type="search" class="search" id="input" placeholder="Type any word">
-                <button class="search-button" id="searchButton">Search</button>
-            </div>
-            <div class="result-container result-container-visibility" id="resultContainer">
+            <h1 class="main-heading animate__animated animate__bounce">DICTIONARY</h1>
+
+
+                <div class="search-form">
+                    <input type="search" class="search" id="input" placeholder="Type any word">
+                    <button class="search-button" id="searchButton">
+                        <i class="fa-solid fa-magnifying-glass fa-beat icon"></i>
+                    </button>
+                </div>
+                <div class="result-container result-container-visibility" id="resultContainer">
                 <div class="result-sub-container">
                     <span class="result-query">Word: </span>
                     <span class="result-ans" id="resultWord"></span>
@@ -41,7 +49,9 @@
                     <span class="result-ans" id="resultSpeech"></span>
                 </div>
             </div>
+
         </div>
+
         <script src="script.js"></script>
     </body>
 </html>
